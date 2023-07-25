@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/amelia-young/hclass-robotics/1/cmake_ex/MyMathLib/mysqrt.cpp
+mysqrt.h
+/home/amelia-young/hclass-robotics/1/cmake_ex/MyMathLib/mysqrt.h
+
+/home/amelia-young/hclass-robotics/1/cmake_ex/MyMathLib/mysqrt.h
+cmath
+-
+
+/home/amelia-young/hclass-robotics/1/cmake_ex/MyMathLib/mysquare.cpp
+mysquare.h
+/home/amelia-young/hclass-robotics/1/cmake_ex/MyMathLib/mysquare.h
+
+/home/amelia-young/hclass-robotics/1/cmake_ex/MyMathLib/mysquare.h
+cmath
+-
+

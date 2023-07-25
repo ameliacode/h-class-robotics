@@ -1,0 +1,2 @@
+tutorial
+-DCATKIN_DEVEL_PREFIX=/home/amelia-young/hclass-robotics/week-1/publisher_ex/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/amelia-young/hclass-robotics/week-1/publisher_ex/catkin_ws/install -G Unix Makefiles

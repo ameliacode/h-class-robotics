@@ -1,0 +1,8 @@
+prefix=/home/amelia-young/hclass-robotics/week-1/publisher_ex/catkin_ws/devel
+
+Name: tutorial
+Description: Description of tutorial
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
