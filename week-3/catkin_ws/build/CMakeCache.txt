@@ -40,7 +40,7 @@ CATKIN_SKIP_TESTING:BOOL=OFF
 CATKIN_SYMLINK_INSTALL:BOOL=OFF
 
 //List of ';' separated packages to build
-CATKIN_WHITELIST_PACKAGES:STRING=pick_n_place
+CATKIN_WHITELIST_PACKAGES:STRING=kinematics_demo
 
 //Path to a program.
 CMAKE_AR:FILEPATH=/usr/bin/ar
@@ -217,6 +217,9 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
+
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/lib/cmake/eigen3
 
 //The directory containing a CMake configuration file for GMock.
 GMock_DIR:PATH=GMock_DIR-NOTFOUND
@@ -402,8 +405,14 @@ kdl_conversions_DIR:PATH=/opt/ros/melodic/share/kdl_conversions/cmake
 //The directory containing a CMake configuration file for kdl_parser.
 kdl_parser_DIR:PATH=/opt/ros/melodic/share/kdl_parser/cmake
 
+//Value Computed by CMake
+kinematics_demo_BINARY_DIR:STATIC=/home/amelia-young/hclass-robotics/week-3/catkin_ws/build/kinematics_demo
+
+//Value Computed by CMake
+kinematics_demo_SOURCE_DIR:STATIC=/home/amelia-young/hclass-robotics/week-3/catkin_ws/src/kinematics_demo
+
 //Path to a library.
-lib:FILEPATH=/opt/ros/melodic/lib/libtopic_tools.so
+lib:FILEPATH=/opt/ros/melodic/lib/libkdl_conversions.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
@@ -560,6 +569,15 @@ tf_conversions_DIR:PATH=/opt/ros/melodic/share/tf_conversions/cmake
 
 //The directory containing a CMake configuration file for topic_tools.
 topic_tools_DIR:PATH=/opt/ros/melodic/share/topic_tools/cmake
+
+//Value Computed by CMake
+traj_plan_BINARY_DIR:STATIC=/home/amelia-young/hclass-robotics/week-3/catkin_ws/build/traj_plan
+
+//The directory containing a CMake configuration file for traj_plan.
+traj_plan_DIR:PATH=/home/amelia-young/hclass-robotics/week-3/catkin_ws/devel/share/traj_plan/cmake
+
+//Value Computed by CMake
+traj_plan_SOURCE_DIR:STATIC=/home/amelia-young/hclass-robotics/week-3/catkin_ws/src/traj_plan
 
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/melodic/share/trajectory_msgs/cmake

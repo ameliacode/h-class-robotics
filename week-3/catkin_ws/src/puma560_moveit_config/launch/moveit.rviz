@@ -192,6 +192,56 @@ Visualization Manager:
         Show Robot Visual: true
       Value: true
       Velocity_Scaling_Factor: 1
+    - Class: rviz/TF
+      Enabled: true
+      Filter (blacklist): ""
+      Filter (whitelist): ""
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        link1:
+          Value: true
+        link2:
+          Value: true
+        link3:
+          Value: true
+        link4:
+          Value: true
+        link5:
+          Value: true
+        link6:
+          Value: true
+        link7:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        link1:
+          link2:
+            link3:
+              link4:
+                link5:
+                  link6:
+                    link7:
+                      {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /rviz_visual_tools
+      Name: MarkerArray
+      Namespaces:
+        Path: true
+        Text: true
+        waypoint0: true
+        waypoint1: true
+        waypoint2: true
+        waypoint3: true
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -208,25 +258,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 2.996500015258789
+      Distance: 4.209866523742676
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0.11356700211763382
-        Y: 0.10592000186443329
-        Z: 2.2351800055275817e-7
+        X: 0.25819331407546997
+        Y: 0.6064001321792603
+        Z: -3.725284614120028e-7
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.07979698479175568
+      Pitch: 0.7997967004776001
       Target Frame: link1
       Value: XYOrbit (rviz)
-      Yaw: 1.0567644834518433
+      Yaw: 1.436766266822815
     Saved: ~
 Window Geometry:
   Displays:
@@ -244,5 +294,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1748
-  X: 0
-  Y: 0
+  X: -32
+  Y: -32

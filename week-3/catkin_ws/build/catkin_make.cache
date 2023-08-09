@@ -1,2 +1,2 @@
-pick_n_place:puma560_description:puma560_moveit_config
--DCATKIN_WHITELIST_PACKAGES=pick_n_place -DCATKIN_DEVEL_PREFIX=/home/amelia-young/hclass-robotics/week-3/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/amelia-young/hclass-robotics/week-3/catkin_ws/install -G Unix Makefiles
+kinematics_demo:pick_n_place:puma560_description:puma560_moveit_config:rrr_description:rrr_moveit_config:traj_plan
+-DCATKIN_WHITELIST_PACKAGES=kinematics_demo -DCATKIN_DEVEL_PREFIX=/home/amelia-young/hclass-robotics/week-3/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/amelia-young/hclass-robotics/week-3/catkin_ws/install -G Unix Makefiles
