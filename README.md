@@ -1,4 +1,5 @@
-### 🚘 Hyundai Mobility Class - 로보틱스
+### 🚘 Hyundai Mobility Class - 로보틱스 🦾
+---
 
 |Week| Summary |
 |---|---|
