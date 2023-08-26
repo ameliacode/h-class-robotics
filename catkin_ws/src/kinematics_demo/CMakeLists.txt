@@ -58,7 +58,12 @@ target_link_libraries(ik_node
   ${catkin_LIBRARIES}
 )
 
-add_executable(ik_linear src/ik_linear_cartesian.cpp)
+add_executable(ik_linear src/ik_linear.cpp)
 target_link_libraries(ik_linear
+  ${catkin_LIBRARIES}
+)
+
+add_executable(singularity src/singularity.cpp)
+target_link_libraries(singularity
   ${catkin_LIBRARIES}
 )

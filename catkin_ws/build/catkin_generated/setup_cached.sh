@@ -7,8 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH='/home/amelia-young/hclass-robotics/catkin_ws/devel:/opt/ros/melodic'
-export LD_LIBRARY_PATH='/opt/ros/melodic/lib'
+export CMAKE_PREFIX_PATH="/home/amelia-young/hclass-robotics/catkin_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/amelia-young/hclass-robotics/catkin_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/amelia-young/hclass-robotics/catkin_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/amelia-young/hclass-robotics/catkin_ws/build'
+export PYTHONPATH="/home/amelia-young/hclass-robotics/catkin_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES='/home/amelia-young/hclass-robotics/catkin_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH='/home/amelia-young/hclass-robotics/catkin_ws/src:/opt/ros/melodic/share'
+export ROS_PACKAGE_PATH="/home/amelia-young/hclass-robotics/catkin_ws/src:$ROS_PACKAGE_PATH"
