@@ -1,2 +1,2 @@
-kinematics_demo:pick_n_place:puma560_description:puma560_moveit_config:rrr_description:rrr_moveit_config:scara_description:scara_moveit_config:traj_plan:workspace
+encoder_example:kinematics_demo:pick_n_place:puma560_description:puma560_moveit_config:rrr_description:rrr_moveit_config:scara_description:scara_moveit_config:traj_plan:workspace
 -DCATKIN_DEVEL_PREFIX=/home/amelia-young/hclass-robotics/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/amelia-young/hclass-robotics/catkin_ws/install -G Unix Makefiles

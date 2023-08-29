@@ -317,6 +317,12 @@ eigen_conversions_DIR:PATH=/opt/ros/melodic/share/eigen_conversions/cmake
 //The directory containing a CMake configuration file for eigen_stl_containers.
 eigen_stl_containers_DIR:PATH=/opt/ros/melodic/share/eigen_stl_containers/cmake
 
+//Value Computed by CMake
+encoder_example_BINARY_DIR:STATIC=/home/amelia-young/hclass-robotics/catkin_ws/build/encoder_example
+
+//Value Computed by CMake
+encoder_example_SOURCE_DIR:STATIC=/home/amelia-young/hclass-robotics/catkin_ws/src/encoder_example
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake
 
@@ -743,7 +749,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
