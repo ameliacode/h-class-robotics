@@ -1,6 +1,0 @@
-/home/amelia-young/hclass-robotics/1/cmake_ex/build/CMakeFiles/rebuild_cache.dir
-/home/amelia-young/hclass-robotics/1/cmake_ex/build/CMakeFiles/ex_math.dir
-/home/amelia-young/hclass-robotics/1/cmake_ex/build/CMakeFiles/edit_cache.dir
-/home/amelia-young/hclass-robotics/1/cmake_ex/build/MyMathLib/CMakeFiles/rebuild_cache.dir
-/home/amelia-young/hclass-robotics/1/cmake_ex/build/MyMathLib/CMakeFiles/MyMath.dir
-/home/amelia-young/hclass-robotics/1/cmake_ex/build/MyMathLib/CMakeFiles/edit_cache.dir
