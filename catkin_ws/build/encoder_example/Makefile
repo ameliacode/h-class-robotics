@@ -91,18 +91,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -134,6 +122,18 @@ list_install_components:
 list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,64 +168,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-encoder_example/CMakeFiles/encoder_example_node.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/encoder_example_node.dir/rule
-.PHONY : encoder_example/CMakeFiles/encoder_example_node.dir/rule
+encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-encoder_example_node: encoder_example/CMakeFiles/encoder_example_node.dir/rule
+roscpp_generate_messages_cpp: encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
-.PHONY : encoder_example_node
+.PHONY : roscpp_generate_messages_cpp
 
 # fast build rule for target.
-encoder_example_node/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/encoder_example_node.dir/build.make encoder_example/CMakeFiles/encoder_example_node.dir/build
-.PHONY : encoder_example_node/fast
+roscpp_generate_messages_cpp/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
-encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+geometry_msgs_generate_messages_cpp: encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : rosgraph_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_cpp
 
 # fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : encoder_example/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: encoder_example/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make encoder_example/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 encoder_example/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
@@ -258,21 +228,6 @@ geometry_msgs_generate_messages_lisp/fast:
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
 encoder_example/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : encoder_example/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -288,124 +243,19 @@ roscpp_generate_messages_lisp/fast:
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
-encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_cpp: encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+geometry_msgs_generate_messages_nodejs: encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make encoder_example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make encoder_example/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : encoder_example/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: encoder_example/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make encoder_example/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : encoder_example/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: encoder_example/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make encoder_example/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : encoder_example/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: encoder_example/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make encoder_example/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make encoder_example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 encoder_example/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
@@ -421,21 +271,6 @@ roscpp_generate_messages_eus: encoder_example/CMakeFiles/roscpp_generate_message
 roscpp_generate_messages_eus/fast:
 	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/roscpp_generate_messages_eus.dir/build.make encoder_example/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-encoder_example/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : encoder_example/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: encoder_example/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/std_msgs_generate_messages_py.dir/build.make encoder_example/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 encoder_example/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
@@ -482,6 +317,96 @@ roscpp_generate_messages_py/fast:
 	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/roscpp_generate_messages_py.dir/build.make encoder_example/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
+# Convenience name for target.
+encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+encoder_example/CMakeFiles/encoder_example_node.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/encoder_example_node.dir/rule
+.PHONY : encoder_example/CMakeFiles/encoder_example_node.dir/rule
+
+# Convenience name for target.
+encoder_example_node: encoder_example/CMakeFiles/encoder_example_node.dir/rule
+
+.PHONY : encoder_example_node
+
+# fast build rule for target.
+encoder_example_node/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/encoder_example_node.dir/build.make encoder_example/CMakeFiles/encoder_example_node.dir/build
+.PHONY : encoder_example_node/fast
+
+# Convenience name for target.
+encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/amelia-young/hclass-robotics/catkin_ws/build && $(MAKE) -f encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make encoder_example/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
 src/encoder.o: src/encoder.cpp.o
 
 .PHONY : src/encoder.o
@@ -518,31 +443,26 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... rebuild_cache"
-	@echo "... encoder_example_node"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... install"
-	@echo "... rosgraph_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... edit_cache"
-	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_lisp"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... list_install_components"
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... install"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... encoder_example_node"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... src/encoder.o"
 	@echo "... src/encoder.i"
 	@echo "... src/encoder.s"
